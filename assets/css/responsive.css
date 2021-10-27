@@ -1,0 +1,92 @@
+/* PC */
+@media (min-width:1024px)  {
+    .menu-mobile{
+        display: none;
+    }
+}
+
+/* tablet */
+@media(max-width:1023px) and (min-width:740px)  {
+    .text1{
+        margin-bottom: -110px;
+    }
+    .text-head{
+        font-size: 48px;
+    } 
+    .ti-music-alt{
+        font-size: 50px;
+    }
+    .menu-mobile{
+        display: none;
+    }       
+}
+
+/* mobile */
+@media (max-width:740px)  {
+    .full-w{
+        width: 100% !important;
+    }
+    #nav{
+        display: block;
+    }
+    #nav:first-child{
+        display: inline-block;
+    }
+    #nav > li{
+        display: block;
+    }
+    .ti-search{
+        display: none;
+    }
+    .ti-menu{
+        display: block;
+    }
+    html{
+        margin-right: -150px; 
+    }
+    .text1{
+        margin-bottom: -150px;
+    }
+    .text-head{
+        font-size: 25px;
+    }
+    .ti-music-alt{
+        font-size: 30px;
+    }
+    .text-para{
+        font-size: 12px;
+    }
+    .menu-mobile{
+        display: block;
+        height: 50px;
+        line-height: 50px;
+        padding: 7px 5px;
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .menu-mobile:hover{
+        background-color: red;
+        display: block;
+        cursor: pointer;
+    }
+    .member{
+        width: 100%;
+        margin-top: 30px;   
+    }
+    .img-mem{
+        width: 60%;
+    }
+    .place{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .send{
+        width: 100%;   
+    }
+    .buy-btn{
+        width: 100%;
+        text-align: center;
+    }
+}

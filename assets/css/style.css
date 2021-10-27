@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --cg-btn: linear-gradient(to right, #fa9e1b,#8d4fff );
+    --tran-btn: linear-gradient(to left, #fa9e1b,#8d4fff );
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#main{
+}
+/* header */
+#header{
+    height: 50px;
+    background: linear-gradient(to right, #f02fc2, #080452);
+    position: fixed;
+    width: 100%;
+    left: o;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+#nav{
+    display: inline-block;
+}
+#nav, .subnav{
+    list-style-type: none;
+}
+#nav > li > a{
+    color: #fff;  
+}
+#nav > li{
+    display: inline-block;
+    line-height: 50px;
+}
+#nav li{
+    position: relative;
+}
+#nav li a{
+    text-decoration: none;
+    font-size: 16px;
+    padding: 0 28px;
+}
+#nav > li:hover > a{
+    background-color:#ccc;
+    color: black;
+    display: block;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+.subnav{
+    position: absolute;
+    background-color: #fff;
+    box-shadow:0 0 10px rgba(0 , 0 , 0, 0.5);
+    display: none;
+    min-width: 160px;   
+}
+.subnav li a{
+    color: black ;
+    padding: 0 16px;   
+}
+.subnav li:hover a{
+    background-color: #ccc;
+    display: block ; 
+}
+.ti-arrow-down{
+    font-size: 10px;
+}
+.menu-mobile,.search{
+    float: right;
+    line-height: 50px;
+}
+.ti-search,.ti-menu{
+    font-size: 20px;
+    color: #fff;
+    padding: 0 20px;
+}
+.search:hover{
+    display: block;
+    background-color: red;
+}
+
+
+/* slider */
+#slider{
+    padding-top: 50%;
+    margin-top: 50px;
+    background: linear-gradient(rgba(64, 6, 97, 0.3), rgb(97 6 82 / 40%)), url(/assets/img/sliderCCG.jpg) top center / cover no-repeat;
+    position: relative; 
+    background-color: rgba(64, 6, 82, 0.8);  
+}
+.text1{
+    position: absolute;
+    bottom: 200px;
+    color:white;
+    text-align: center;
+    width: 100%;
+}
+.ti-music-alt{
+    color: orange;
+    font-size: 70px;
+}
+.text-head{
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 70px;
+    padding: 30px;
+    font-family: cursive;
+    letter-spacing: 3px;
+}
+.text-para{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    display: inline-block;
+    padding: 20px 35px;
+    border-radius: 20px;
+    background:var(--cg-btn);
+}
+.text-para:hover{
+    background: var(--tran-btn);
+    cursor: pointer;
+}
+
+/* content */
+.content-section{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0 112px ;
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 100%;
+}
+.head-sec{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight:600 ;
+    letter-spacing: 2px;   
+}
+.subsec{
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 25px;
+    font-style:italic;
+    opacity: 0.6;
+}
+.about{
+    text-align: justify;
+    line-height: 1.5;
+}
+.member-list{
+    margin-top: 47px;
+    overflow: hidden;
+}
+.member{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+.member-name{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.img-mem{
+    width: 154px;
+    border-radius: 4px;
+}
+.tour-sec{
+    background: linear-gradient(to right, #f02fc2, #080452);
+    overflow: hidden;
+}
+.ticket{
+    background-color: #fff;
+    margin-top: 40px;
+}
+.ticket li{
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ccc;
+    color: #757575;
+    list-style-type: none;
+
+}
+.sold{
+    background-color: red;
+    color: #fff;
+    padding: 4px 2px;
+    margin-left: 10px;
+}
+.rest{
+    background-color: black;
+    color: white;
+    width: 25px;
+    height: 22px;
+    float: right;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 22px;
+}
+.place-list{
+    margin-top: 32px;
+    overflow: hidden;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.place{
+    float: left;
+    width: 33.33%;
+    padding: 0 8px;
+}
+.place-img{
+    width: 100%;
+    display: block;
+}
+.place-img:hover{
+    opacity: 0.6;
+}
+.place-body{
+    background-color: white;
+    padding: 16px;
+    font-size: 15px;
+}
+.place-head{
+    font-size: 15px;
+    font-weight: 550;
+}
+.place-time{
+    margin-top: 15px;
+    opacity: 0.7;
+    font-style: italic;
+}
+.place-content{
+    margin-top: 15px;
+    line-height: 1.5;
+   
+}
+.buy-btn{
+    background: var(--cg-btn);
+    color: white;
+    text-decoration: none;
+    padding: 8px 10px;
+    width: 108px;
+    height: 38.4px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+.buy-btn:hover{
+    background: var(--tran-btn);
+}
+.contact-body{
+    display: flex;
+    justify-content: space-between; 
+    padding: 10px;
+}
+.imformation{
+    font-size: 18px;
+    font-weight: 500;
+}
+.imformation a {
+    color: blue;
+}
+.imformation a:hover{
+    opacity: 0.7;
+}
+.imformation p{
+    padding: 4px;
+}
+.imformation i{
+    display: inline-block;
+    width: 30px;
+}
+.text-1{
+    display: block;
+    font-size: 24px;
+    border-radius: 12px ;
+    margin: 5px;
+    border: #ccc solid 2px;
+}
+input::placeholder{
+    font-size: 13px;
+    color: black;
+}
+.text-1:focus{
+    opacity: 0.4;
+    border:#000 solid 2px;
+}
+.send{
+    float: right;
+    background:var(--cg-btn);
+    color: white;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border: none;
+}
+.send:hover{
+    cursor: pointer;
+    background:var(--tran-btn);
+}
+.music{
+    width: 100%;
+    display: inline-block;
+}
+
+/* footer */
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+.social a{
+    font-size: 40px;
+    margin: 8px;  
+}
+.social a:hover{
+    color:blue;
+}
+
+.bye{
+    font-family: 'Beyond';
+    font-size: 20px;
+    display: inline-block;
+    margin: 30px ;
+    border-radius: 30px;
+    padding: 15px 100px;
+    background-color: violet;
+    animation-name: goodbye;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes goodbye {
+    0% {background-color:violet;}
+    25% {background-color:pink;}
+    50% {background-color:skyblue;}
+    100% {background-color:burlywood;}
+}
