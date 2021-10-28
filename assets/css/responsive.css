@@ -92,4 +92,13 @@
         width: 100%;
         text-align: center;
     }
+    .contact-body{
+        flex-wrap: wrap;
+    }
+    .imformation{
+        font-size: 25px;
+    }
+    .text-1{
+        font-size: 38px;
+    }
 }
