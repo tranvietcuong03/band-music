@@ -26,6 +26,9 @@
     .full-w{
         width: 100% !important;
     }
+    #header{
+        overflow: hidden;
+    }
     #nav{
         display: block;
     }
