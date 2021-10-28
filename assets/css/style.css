@@ -68,7 +68,7 @@ body{
     padding: 0 16px;   
 }
 .subnav li:hover a{
-    background-color: #ccc;
+    background-color:#ccc;
     display: block ; 
 }
 .ti-arrow-down{
