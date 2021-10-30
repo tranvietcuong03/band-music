@@ -93,7 +93,7 @@ body{
 #slider{
     padding-top: 50%;
     margin-top: 50px;
-    background: linear-gradient(rgba(64, 6, 97, 0.3), rgb(97 6 82 / 40%)), url(/assets/img/sliderCCG.jpg) top center / cover no-repeat;
+    background: linear-gradient(rgba(64, 6, 97, 0.3), rgb(97 6 82 / 40%)), url(http://www.genmusicvn.net/images/index.png) bottom center / cover no-repeat;
     position: relative; 
     background-color: rgba(64, 6, 82, 0.8);
 }
